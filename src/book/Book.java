@@ -13,12 +13,12 @@ public class Book {
     String publisherName = "Penguin Random House LLC";
 
   }
-  public int copyrightDate(){
-    
+  public int copyrightDateCRA(){
+    int crazyRichDate = 2013;
+    return crazyRichDate;
   }
 
   public void setCopyrightDate(int date1, int date2, int date3){
-
 
 
   }
