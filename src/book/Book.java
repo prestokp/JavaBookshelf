@@ -1,36 +1,24 @@
 package book;
 
-/*public class Car {
-
-  // Car class will have instance data
-
-  private String make;    //Make of the car
-  private String model;   //Model of the car
-  private int year;       //Year the car was built
-
-  //Constructor object
-  public Car(String make, String model, int year){
-    //Our parameter list consistes of the instance variables we
-    this.make = make;  //this variable shadows the instance variable make, take parameter make and assign this to instance
-    //variable make
-    // this.make refers to instance variable make
-    this.model = model;
-    this.year = year;
- */
-
 public class Book {
 
+  //Declares the variables that will contain the instance data for book objects
   private String title;
   private String authorName;
   private String publisherName;
   private int copyrightYear;
 
+  //Makes the book objects and the parameter list in which arguments can be passed into
   public Book(String title, String authorName, String publisherName, int copyrightYear){
     this.title = title;
     this.authorName = authorName;
     this.publisherName = publisherName;
     this.copyrightYear = copyrightYear;
   }
+
+  //Getter and Setter functions for the book class
+  //Define the parameter list and then right click => generate => getter & setter
+  //IntelliJ shortcut
 
   public String getTitle() {
     return title;
@@ -64,30 +52,11 @@ public class Book {
     this.copyrightYear = copyrightYear;
   }
 
-  //Conditional method that will determine if the car is antique or not
-  public boolean isAntique(){
-    int currentYear = LocalDate.now().getYear();
-        /*
-        if (currentYear - year > 45)
-            return true;
-        else
-            return false;
-        */
-    return currentYear - year > 45; //If it's greater than 45 then it will return true, if not it returns false
-  }
-
+  //This allows data be displayed as a string when generating output
   @Override
   public String toString() {
     return title + " " + authorName + " " + publisherName + " " + copyrightYear;
   }
 }
 
-
-  /*String crazyRichTitle = "Crazy Rich Asians";
-  String chinaRichTitle = "China Rich Girlfriend";
-  String richPeopleTitle = "Rich People Problems";
-  String authorName = "Kevin Kwan";
-  String publisherName = "Penguin Random House LLC";
-
-   */
 
